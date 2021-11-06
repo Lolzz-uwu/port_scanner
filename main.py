@@ -43,7 +43,7 @@ def main():
             ip_addrs = input('enter the ip of the target\n:')
             for i in range(0,65535):
                 scan(ip_addrs,i)
-main()
+if __name__ == '__main__':           
+    main()
 
             
-
