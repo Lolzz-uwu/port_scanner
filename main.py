@@ -1,7 +1,7 @@
 import socket
 import os
 import platform 
-common_ports = [20,21,22,23,25 ,50,51,53,67,68,69,80,110,119,123,135,139,143,161,16,389,449,989,990,3389,443,554,]
+common_ports = [20,21,22,23,25 ,50,51,53,67,68,69,80,110,119,123,135,139,143,161,16,389,449,989,990,3389,443,554,1723]
 
 def clearing():
     if platform.system() == 'Linux':
@@ -41,9 +41,9 @@ def main():
         elif m == '2':
             clearing()
             ip_addrs = input('enter the ip of the target\n:')
-
-        for i in range(0,65535):
-            scan(ip_addrs,i)
+            for i in range(0,65535):
+                scan(ip_addrs,i)
 main()
 
             
+
